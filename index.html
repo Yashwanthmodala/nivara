@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 /* ═══════════════════════════════════════════
-    DESIGN TOKENS
+   DESIGN TOKENS
 ═══════════════════════════════════════════ */
 :root {
   --blue:#1a6bff;
@@ -34,7 +34,7 @@ a{text-decoration:none;color:inherit}
 button{cursor:pointer;font-family:inherit}
 
 /* ═══════════════════════════════════════════
-    UTILITIES
+   UTILITIES
 ═══════════════════════════════════════════ */
 .container{max-width:1200px;margin:0 auto;padding:0 5%}
 .badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue-light);color:var(--blue);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.4px}
@@ -49,7 +49,7 @@ button{cursor:pointer;font-family:inherit}
 .section-head p{font-size:16px;color:var(--muted);margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto;font-weight:300}
 
 /* ═══════════════════════════════════════════
-    BUTTONS
+   BUTTONS
 ═══════════════════════════════════════════ */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;border:none;transition:all .2s;cursor:pointer}
 .btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 16px rgba(26,107,255,0.3)}
@@ -64,7 +64,7 @@ button{cursor:pointer;font-family:inherit}
 .btn-sm{padding:8px 16px;font-size:12px;border-radius:8px}
 
 /* ═══════════════════════════════════════════
-    NAVIGATION
+   NAVIGATION
 ═══════════════════════════════════════════ */
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;display:flex;align-items:center;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(229,233,240,0.6);transition:box-shadow .2s}
 .navbar.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.06)}
@@ -85,13 +85,13 @@ button{cursor:pointer;font-family:inherit}
 .mobile-nav a:hover{background:var(--bg);color:var(--blue)}
 
 /* ═══════════════════════════════════════════
-    PAGE SYSTEM
+   PAGE SYSTEM
 ═══════════════════════════════════════════ */
 .page{display:none}
 .page.active{display:block}
 
 /* ═══════════════════════════════════════════
-    HOME — HERO
+   HOME — HERO
 ═══════════════════════════════════════════ */
 .hero{padding:130px 0 80px;background:linear-gradient(160deg,#f0f5ff 0%,#e8faf3 50%,#f8fafc 100%);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(26,107,255,0.07) 0%,transparent 70%);pointer-events:none}
@@ -130,7 +130,7 @@ button{cursor:pointer;font-family:inherit}
 .float-card.booking .b-sub{font-size:11px;color:var(--muted)}
 
 /* ═══════════════════════════════════════════
-    SEARCH BAR
+   SEARCH BAR
 ═══════════════════════════════════════════ */
 .search-section{padding:0 0 60px;position:relative;z-index:10}
 .search-box{background:#fff;border-radius:20px;box-shadow:0 8px 48px rgba(26,107,255,0.12);border:1px solid var(--border);padding:8px;max-width:900px;margin:0 auto;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
@@ -144,7 +144,7 @@ button{cursor:pointer;font-family:inherit}
 .search-btn:hover{transform:scale(1.02);box-shadow:0 4px 20px rgba(26,107,255,0.4)}
 
 /* ═══════════════════════════════════════════
-    PG CARDS
+   PG CARDS
 ═══════════════════════════════════════════ */
 .pg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
 .pg-card{background:#fff;border-radius:var(--r);border:1px solid var(--border);overflow:hidden;transition:transform .2s,box-shadow .2s;cursor:pointer}
@@ -165,11 +165,14 @@ button{cursor:pointer;font-family:inherit}
 .card-rating .star{color:#f59e0b}
 
 /* ═══════════════════════════════════════════
-    HOME PAGE SECTIONS
+   HOME PAGE SECTIONS
 ═══════════════════════════════════════════ */
+/* City pills */
 .city-pills{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
 .city-pill{background:#fff;border:1.5px solid var(--border);border-radius:40px;padding:10px 22px;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:8px}
 .city-pill:hover,.city-pill.active{border-color:var(--blue);color:var(--blue);background:var(--blue-light)}
+
+/* How it works */
 .hiw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
 .hiw-card{background:var(--bg);border-radius:var(--r);padding:28px 24px;position:relative;border:1px solid var(--border);transition:transform .2s}
 .hiw-card:hover{transform:translateY(-3px)}
@@ -177,6 +180,8 @@ button{cursor:pointer;font-family:inherit}
 .hiw-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
 .hiw-card h3{font-family:'Clash Display',sans-serif;font-size:17px;font-weight:600;margin-bottom:8px}
 .hiw-card p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* Testimonials */
 .testi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
 .testi-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px;transition:box-shadow .2s}
 .testi-card:hover{box-shadow:var(--shadow)}
@@ -186,6 +191,8 @@ button{cursor:pointer;font-family:inherit}
 .testi-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;flex-shrink:0}
 .testi-name{font-size:13px;font-weight:600}
 .testi-role{font-size:11px;color:var(--muted)}
+
+/* List Your PG banner */
 .list-pg-section{background:linear-gradient(135deg,var(--blue) 0%,var(--blue-dark) 40%,#0f3fa8 100%);border-radius:24px;padding:60px 5%;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;margin:0 5%}
 .lpg-text h2{font-family:'Clash Display',sans-serif;font-size:clamp(26px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-0.5px;margin-bottom:10px}
 .lpg-text p{font-size:15px;color:rgba(255,255,255,.7);font-weight:300;max-width:420px}
@@ -198,7 +205,7 @@ button{cursor:pointer;font-family:inherit}
 .btn-outline-white:hover{background:rgba(255,255,255,.1)}
 
 /* ═══════════════════════════════════════════
-    LISTINGS PAGE
+   LISTINGS PAGE
 ═══════════════════════════════════════════ */
 .listings-page-hero{background:linear-gradient(160deg,#f0f5ff,#e8faf3);padding:100px 0 40px;border-bottom:1px solid var(--border)}
 .listings-layout{display:grid;grid-template-columns:280px 1fr;gap:32px;padding:40px 0}
@@ -220,7 +227,7 @@ button{cursor:pointer;font-family:inherit}
 .sort-select{padding:8px 14px;border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:13px;color:var(--ink);outline:none;cursor:pointer;background:#fff}
 
 /* ═══════════════════════════════════════════
-    PG DETAILS PAGE
+   PG DETAILS PAGE
 ═══════════════════════════════════════════ */
 .detail-page{padding:88px 0 0}
 .detail-gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 200px;gap:8px;border-radius:20px;overflow:hidden;margin-bottom:40px}
@@ -230,6 +237,7 @@ button{cursor:pointer;font-family:inherit}
 .gal-cell:hover .overlay{background:rgba(255,255,255,0.15)}
 .more-photos-btn{position:absolute;bottom:12px;right:12px;background:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;gap:6px}
 .detail-layout{display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:start}
+.detail-left{}
 .detail-header{margin-bottom:24px}
 .detail-name{font-family:'Clash Display',sans-serif;font-size:32px;font-weight:700;color:var(--ink);letter-spacing:-0.5px;margin-bottom:8px}
 .detail-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
@@ -241,6 +249,8 @@ button{cursor:pointer;font-family:inherit}
 .amenities-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
 .amenity-item{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500}
 .amenity-item .a-icon{font-size:18px}
+
+/* Booking card */
 .booking-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:24px;position:sticky;top:88px;box-shadow:var(--shadow-lg)}
 .bc-price{font-family:'Clash Display',sans-serif;font-size:32px;font-weight:700;color:var(--blue);margin-bottom:4px}
 .bc-price span{font-size:14px;font-weight:400;color:var(--muted)}
@@ -255,6 +265,8 @@ button{cursor:pointer;font-family:inherit}
 .contact-btn.wa{color:#16a163;border-color:#16a163}
 .contact-btn.wa:hover{background:var(--green-light)}
 .bc-note{text-align:center;font-size:11px;color:var(--muted);margin-top:12px}
+
+/* Reviews */
 .review-list{display:flex;flex-direction:column;gap:20px}
 .review-item{padding:16px 0;border-bottom:1px solid var(--border)}
 .review-item:last-child{border-bottom:none}
@@ -267,7 +279,7 @@ button{cursor:pointer;font-family:inherit}
 .rev-text{font-size:13px;color:var(--ink2);line-height:1.7;margin-top:6px}
 
 /* ═══════════════════════════════════════════
-    ABOUT PAGE
+   ABOUT PAGE
 ═══════════════════════════════════════════ */
 .about-hero{background:linear-gradient(160deg,#f0f5ff,#e8faf3);padding:120px 0 80px;text-align:center}
 .about-hero h1{font-family:'Clash Display',sans-serif;font-size:clamp(32px,4vw,52px);font-weight:700;letter-spacing:-1px;color:var(--ink);margin-bottom:16px}
@@ -285,7 +297,7 @@ button{cursor:pointer;font-family:inherit}
 .team-role{font-size:12px;color:var(--muted)}
 
 /* ═══════════════════════════════════════════
-    CONTACT PAGE
+   CONTACT PAGE
 ═══════════════════════════════════════════ */
 .contact-page{padding:100px 0 80px}
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
@@ -306,7 +318,7 @@ button{cursor:pointer;font-family:inherit}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
 /* ═══════════════════════════════════════════
-    FOOTER
+   FOOTER
 ═══════════════════════════════════════════ */
 footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
 .footer-inner{max-width:1200px;margin:0 auto;padding:0 5%}
@@ -325,7 +337,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
 .footer-bottom-links a:hover{color:rgba(255,255,255,.8)}
 
 /* ═══════════════════════════════════════════
-    WHATSAPP FLOAT + TOAST
+   WHATSAPP FLOAT + TOAST
 ═══════════════════════════════════════════ */
 .wa-float{position:fixed;bottom:24px;right:24px;z-index:900;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);cursor:pointer;transition:transform .2s}
 .wa-float:hover{transform:scale(1.1)}
@@ -334,7 +346,34 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
 #toast.show{opacity:1;transform:translateY(0)}
 
 /* ═══════════════════════════════════════════
-    UPI PAYMENT SECTION CSS
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media(max-width:1024px){
+  .listings-layout{grid-template-columns:1fr}
+  .filters-panel{position:static}
+  .detail-layout{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .nav-links,.nav-actions{display:none}
+  .hamburger{display:flex}
+  .list-pg-section{flex-direction:column}
+  .search-box{flex-direction:column}
+  .search-field{border-right:none;border-bottom:1px solid var(--border);width:100%}
+  .search-field:last-of-type{border-bottom:none}
+  .search-btn{width:100%;justify-content:center}
+  .detail-gallery{grid-template-columns:1fr}
+  .detail-gallery .gal-cell{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+
+/* ═══════════════════════════════════════════
+   UPI PAYMENT
 ═══════════════════════════════════════════ */
 .upi-card{background:#fff8f0;border:1.5px solid #ffcc80;border-radius:14px;padding:16px;margin-top:16px}
 .upi-card-title{font-size:13px;font-weight:700;color:#e65100;margin-bottom:10px;display:flex;align-items:center;gap:6px}
@@ -351,11 +390,13 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
 </head>
 <body>
 
+<!-- WHATSAPP FLOAT -->
 <a class="wa-float" href="https://wa.me/917661912814" target="_blank" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 <div id="toast">✅ Message sent! We'll respond shortly.</div>
 
+<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
     <a class="nav-logo" href="#" onclick="showPage('home')">
@@ -378,6 +419,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
   </div>
 </nav>
 
+<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <a href="#" onclick="showPage('home');toggleMobileMenu()">🏠 Home</a>
   <a href="#" onclick="showPage('listings');toggleMobileMenu()">🔍 Find PGs</a>
@@ -386,7 +428,12 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
   <a href="#" onclick="showPage('contact');toggleMobileMenu()" style="color:var(--blue);font-weight:600">➕ List Your PG</a>
 </div>
 
+<!-- ════════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════════ -->
 <div class="page active" id="page-home">
+
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-content">
@@ -406,83 +453,258 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
           <div class="hero-stat"><div class="num">4.8★</div><div class="lbl">Avg Rating</div></div>
         </div>
       </div>
+
       <div class="hero-visual fade-in">
         <div class="hero-card-stack">
           <div class="hero-main-card">
-            <div class="hero-main-card-img">🏢<div class="img-overlay"></div></div>
+            <div class="hero-main-card-img">
+              🏢
+              <div class="img-overlay"></div>
+            </div>
             <div class="hero-card-body">
               <div class="hcb-row">
                 <div class="hcb-name">Skyline Co-Living</div>
-                <div class="hcb-price">₹9,500<span>/mo</span></div>
+                <div><div class="hcb-price">₹9,500<span>/mo</span></div></div>
               </div>
               <div class="hcb-loc">📍 Kondapur, Hyderabad</div>
               <div class="hcb-tags">
-                <span class="tag">AC</span><span class="tag">WiFi</span><span class="tag">Meals</span>
+                <span class="tag">AC</span>
+                <span class="tag">WiFi</span>
+                <span class="tag">Meals</span>
+                <span class="tag">Gym</span>
               </div>
             </div>
           </div>
           <div class="float-card rating">
-            <div class="stars">★★★★★</div>
-            <div class="r-num">4.9</div>
-            <div class="r-lbl">218 reviews</div>
+            <div>
+              <div class="stars">★★★★★</div>
+              <div class="r-num">4.9</div>
+            </div>
+            <div>
+              <div class="r-lbl">218 reviews</div>
+            </div>
+          </div>
+          <div class="float-card booking">
+            <div class="b-icon">🎉</div>
+            <div>
+              <div class="b-text">Just booked!</div>
+              <div class="b-sub">2 mins ago · Bangalore</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SEARCH -->
   <section class="search-section">
     <div class="container">
       <div class="search-box">
         <div class="search-field">
           <span class="sf-icon">📍</span>
-          <div style="flex:1"><label>City</label><select><option>Hyderabad</option><option>Bangalore</option><option>Chennai</option></select></div>
+          <div style="flex:1">
+            <label>City</label>
+            <select id="hero-city">
+              <option>All Cities</option>
+              <option>Hyderabad</option>
+              <option>Bangalore</option>
+              <option>Chennai</option>
+            </select>
+          </div>
         </div>
         <div class="search-field">
           <span class="sf-icon">🏷️</span>
-          <div style="flex:1"><label>Max Budget</label><select><option>Any Budget</option><option>Under ₹10k</option></select></div>
+          <div style="flex:1">
+            <label>Max Budget</label>
+            <select id="hero-budget">
+              <option>Any Budget</option>
+              <option>Under ₹5,000</option>
+              <option>₹5,000 – ₹10,000</option>
+              <option>₹10,000 – ₹15,000</option>
+              <option>Above ₹15,000</option>
+            </select>
+          </div>
         </div>
-        <button class="search-btn" onclick="showPage('listings')">🔍 Search</button>
+        <div class="search-field">
+          <span class="sf-icon">🛏️</span>
+          <div style="flex:1">
+            <label>Room Type</label>
+            <select id="hero-type">
+              <option>Any Type</option>
+              <option>Single</option>
+              <option>Double Sharing</option>
+              <option>Triple Sharing</option>
+              <option>Co-living Studio</option>
+            </select>
+          </div>
+        </div>
+        <button class="search-btn" onclick="showPage('listings')">
+          🔍 Search
+        </button>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- CITIES -->
+  <section class="section" style="padding-top:20px">
     <div class="container">
       <div class="section-head fade-in">
         <div class="eyebrow">Browse by city</div>
         <h2>We're live in 3 cities</h2>
+        <p>More cities coming soon. Pick yours and explore verified PGs.</p>
       </div>
       <div class="city-pills">
-        <div class="city-pill active" onclick="filterCity(this,'all')">🗺️ All Cities</div>
-        <div class="city-pill" onclick="filterCity(this,'Hyderabad')">🏙️ Hyderabad</div>
+        <div class="city-pill active" onclick="filterCity(this,'all')">🗺️ All Cities <b>(500+)</b></div>
+        <div class="city-pill" onclick="filterCity(this,'Hyderabad')">🏙️ Hyderabad <b>(210)</b></div>
+        <div class="city-pill" onclick="filterCity(this,'Bangalore')">🌿 Bangalore <b>(185)</b></div>
+        <div class="city-pill" onclick="filterCity(this,'Chennai')">🌊 Chennai <b>(105)</b></div>
       </div>
-      <div class="pg-grid" id="featured-grid" style="margin-top:36px"></div>
+      <div class="pg-grid" style="margin-top:36px" id="featured-grid"></div>
+      <div style="text-align:center;margin-top:36px">
+        <button class="btn btn-outline btn-lg" onclick="showPage('listings')">View all PGs →</button>
+      </div>
     </div>
   </section>
-</div>
 
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background:var(--bg);border-top:1px solid var(--border)">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="eyebrow">How it works</div>
+        <h2>Find a PG in 3 simple steps</h2>
+        <p>No brokers, no hidden charges, no hassle.</p>
+      </div>
+      <div class="hiw-grid">
+        <div class="hiw-card fade-in">
+          <div class="hiw-num">01</div>
+          <div class="hiw-icon" style="background:#e8f0ff">🔍</div>
+          <h3>Search & Filter</h3>
+          <p>Enter your city, budget, and preferences. Our smart filters find the best matches for you in seconds.</p>
+        </div>
+        <div class="hiw-card fade-in">
+          <div class="hiw-num">02</div>
+          <div class="hiw-icon" style="background:#e6f7f0">🏠</div>
+          <h3>Visit & Verify</h3>
+          <p>Schedule a visit or take a live video tour. Every PG on Nivara is physically verified by our team.</p>
+        </div>
+        <div class="hiw-card fade-in">
+          <div class="hiw-num">03</div>
+          <div class="hiw-icon" style="background:#fef3c7">✍️</div>
+          <h3>Book & Move In</h3>
+          <p>Sign the digital agreement, pay securely, and move in on your chosen date. We're with you every step.</p>
+        </div>
+        <div class="hiw-card fade-in">
+          <div class="hiw-num">04</div>
+          <div class="hiw-icon" style="background:#fce8f0">🛡️</div>
+          <h3>Live Worry-Free</h3>
+          <p>Our resident app handles maintenance requests, rent payments, and connects you with your community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="eyebrow">Residents love Nivara</div>
+        <h2>Real stories, real people</h2>
+        <p>Over 12,000 residents have found their home through Nivara.</p>
+      </div>
+      <div class="testi-grid" id="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- LIST YOUR PG -->
+  <section class="section" style="background:var(--bg);border-top:1px solid var(--border)">
+    <div class="container">
+      <div class="list-pg-section fade-in">
+        <div class="lpg-text">
+          <div class="badge" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:16px">🏢 For Property Owners</div>
+          <h2>List Your PG on Nivara</h2>
+          <p>Join 200+ property owners earning more with 0% broker commission, real-time dashboards, and guaranteed rent protection.</p>
+          <div class="lpg-features">
+            <div class="lpg-feat">✅ Zero broker fees</div>
+            <div class="lpg-feat">📊 Real-time dashboard</div>
+            <div class="lpg-feat">🔒 Rent protection</div>
+            <div class="lpg-feat">📸 Free photography</div>
+          </div>
+        </div>
+        <div class="lpg-actions">
+          <button class="btn btn-white btn-lg" onclick="showPage('contact');setContactTab('owner')">List My PG Free →</button>
+          <button class="btn btn-outline-white btn-lg" onclick="showPage('about')">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ════════════════════════════════════════
+     LISTINGS PAGE
+════════════════════════════════════════ -->
 <div class="page" id="page-listings">
   <div class="listings-page-hero">
     <div class="container">
-      <h1>Browse All PG Listings</h1>
+      <div class="badge" style="margin-bottom:14px">🔍 Discover PGs</div>
+      <h1 style="font-family:'Clash Display',sans-serif;font-size:clamp(28px,3.5vw,42px);font-weight:700;letter-spacing:-0.5px;margin-bottom:8px">Browse All PG Listings</h1>
+      <p style="color:var(--muted);font-size:15px;font-weight:300">Verified, quality-checked PGs across Hyderabad, Bangalore & Chennai</p>
     </div>
   </div>
   <div class="container">
     <div class="listings-layout">
+      <!-- FILTERS -->
       <div class="filters-panel">
         <div class="filter-card">
-          <div class="filter-title">Filters <button onclick="resetFilters()">Reset</button></div>
+          <div class="filter-title">Filters <button onclick="resetFilters()">Reset all</button></div>
           <div class="filter-group">
             <h4>City</h4>
-            <label class="filter-check"><input type="checkbox" value="Hyderabad" checked onchange="applyFilters()"> Hyderabad</label>
-            <label class="filter-check"><input type="checkbox" value="Bangalore" checked onchange="applyFilters()"> Bangalore</label>
+            <label class="filter-check"><input type="checkbox" value="Hyderabad" onchange="applyFilters()" checked> Hyderabad</label>
+            <label class="filter-check"><input type="checkbox" value="Bangalore" onchange="applyFilters()" checked> Bangalore</label>
+            <label class="filter-check"><input type="checkbox" value="Chennai" onchange="applyFilters()" checked> Chennai</label>
+          </div>
+          <div class="filter-group">
+            <h4>Room Type</h4>
+            <label class="filter-check"><input type="checkbox" value="Single" onchange="applyFilters()" checked> Single occupancy</label>
+            <label class="filter-check"><input type="checkbox" value="Double" onchange="applyFilters()" checked> Double sharing</label>
+            <label class="filter-check"><input type="checkbox" value="Triple" onchange="applyFilters()" checked> Triple sharing</label>
+            <label class="filter-check"><input type="checkbox" value="Studio" onchange="applyFilters()" checked> Co-living studio</label>
+          </div>
+          <div class="filter-group">
+            <h4>Amenities</h4>
+            <label class="filter-check"><input type="checkbox" value="WiFi" onchange="applyFilters()"> WiFi included</label>
+            <label class="filter-check"><input type="checkbox" value="AC" onchange="applyFilters()"> Air conditioning</label>
+            <label class="filter-check"><input type="checkbox" value="Meals" onchange="applyFilters()"> Meals included</label>
+            <label class="filter-check"><input type="checkbox" value="Gym" onchange="applyFilters()"> Gym access</label>
+            <label class="filter-check"><input type="checkbox" value="Laundry" onchange="applyFilters()"> Laundry</label>
+          </div>
+          <div class="filter-group">
+            <h4>Monthly Budget</h4>
+            <div class="price-range">
+              <input type="range" min="3000" max="20000" value="20000" id="price-slider" oninput="updatePriceFilter(this.value)">
+              <div class="price-vals"><span>₹3,000</span><span id="price-max-label">₹20,000</span></div>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h4>Rating</h4>
+            <label class="filter-check"><input type="radio" name="rating" value="0" onchange="applyFilters()" checked> Any rating</label>
+            <label class="filter-check"><input type="radio" name="rating" value="4" onchange="applyFilters()"> 4★ & above</label>
+            <label class="filter-check"><input type="radio" name="rating" value="4.5" onchange="applyFilters()"> 4.5★ & above</label>
           </div>
         </div>
       </div>
+
+      <!-- LISTINGS MAIN -->
       <div class="listings-main">
         <div class="top-bar">
           <div class="result-count" id="result-count"><b>18</b> PGs found</div>
+          <select class="sort-select" onchange="sortListings(this.value)">
+            <option value="default">Sort: Recommended</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+            <option value="newest">Newest First</option>
+          </select>
         </div>
         <div class="pg-grid" id="listings-grid"></div>
       </div>
@@ -490,180 +712,705 @@ footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 0}
   </div>
 </div>
 
+<!-- ════════════════════════════════════════
+     PG DETAILS PAGE
+════════════════════════════════════════ -->
 <div class="page" id="page-detail">
   <div class="detail-page">
     <div class="container">
-      <button class="btn btn-ghost btn-sm" onclick="showPage('listings')">← Back</button>
-      <div class="detail-gallery" style="margin-top:20px">
-        <div class="gal-main"><span id="detail-emoji">🏢</span></div>
+      <!-- BACK -->
+      <div style="padding:16px 0 0">
+        <button class="btn btn-ghost btn-sm" onclick="showPage('listings')">← Back to listings</button>
       </div>
+
+      <!-- GALLERY -->
+      <div class="detail-gallery" id="detail-gallery">
+        <div class="gal-main"><span id="detail-emoji">🏢</span></div>
+        <div class="gal-cell" style="background:#e8f0ff">🛏️<div class="overlay"></div></div>
+        <div class="gal-cell" style="background:#e6f7f0">🍳<div class="overlay"></div></div>
+        <div class="gal-cell" style="background:#fef3c7">🏋️<div class="overlay"></div></div>
+        <div class="gal-cell" style="background:#fce8f0;position:relative">
+          🚿
+          <button class="more-photos-btn" onclick="showToast('Gallery opening soon!')">📷 +8 photos</button>
+          <div class="overlay"></div>
+        </div>
+      </div>
+
+      <!-- DETAIL LAYOUT -->
       <div class="detail-layout">
         <div class="detail-left">
           <div class="detail-header">
-            <div id="detail-badges"></div>
-            <h1 class="detail-name" id="detail-name"></h1>
-            <div class="detail-loc" id="detail-location"></div>
+            <div style="display:flex;gap:8px;margin-bottom:12px" id="detail-badges"></div>
+            <div class="detail-name" id="detail-name">Skyline Co-Living</div>
+            <div class="detail-meta">
+              <div class="detail-rating">⭐ <span id="detail-rating">4.9</span> · <span id="detail-reviews">218 reviews</span></div>
+              <div class="detail-loc">📍 <span id="detail-location">Kondapur, Hyderabad</span></div>
+            </div>
           </div>
+
           <div class="detail-section">
             <h3>About this PG</h3>
-            <p id="detail-desc"></p>
+            <p id="detail-desc" style="font-size:14px;color:var(--ink2);line-height:1.8;font-weight:300"></p>
           </div>
+
           <div class="detail-section">
             <h3>Amenities</h3>
             <div class="amenities-grid" id="detail-amenities"></div>
           </div>
+
           <div class="detail-section">
-            <h3>Resident reviews</h3>
+            <h3>Price breakdown</h3>
+            <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border)">
+              <table style="width:100%;border-collapse:collapse">
+                <thead><tr style="background:var(--blue-light)"><th style="text-align:left;padding:12px 16px;font-size:12px;color:var(--blue);font-weight:600;letter-spacing:.5px">COMPONENT</th><th style="text-align:right;padding:12px 16px;font-size:12px;color:var(--blue);font-weight:600">AMOUNT</th><th style="text-align:left;padding:12px 16px;font-size:12px;color:var(--blue);font-weight:600">NOTE</th></tr></thead>
+                <tbody id="price-breakdown-table"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h3>House rules</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div class="amenity-item"><span class="a-icon">🕙</span> Check-in after 9 AM</div>
+              <div class="amenity-item"><span class="a-icon">🌙</span> Gate closes at 11 PM</div>
+              <div class="amenity-item"><span class="a-icon">🚭</span> No smoking indoors</div>
+              <div class="amenity-item"><span class="a-icon">🐾</span> No pets allowed</div>
+              <div class="amenity-item"><span class="a-icon">🎵</span> No loud music after 10 PM</div>
+              <div class="amenity-item"><span class="a-icon">👥</span> Guests allowed till 9 PM</div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+              <h3 style="margin-bottom:0">Resident reviews</h3>
+              <div style="display:flex;align-items:center;gap:8px">
+                <div style="font-family:'Clash Display',sans-serif;font-size:36px;font-weight:700" id="rating-big">4.9</div>
+                <div><div style="color:#f59e0b;font-size:14px">★★★★★</div><div style="font-size:12px;color:var(--muted)" id="review-count-label">218 reviews</div></div>
+              </div>
+            </div>
             <div class="review-list" id="detail-reviews-list"></div>
           </div>
         </div>
-        <div class="booking-side">
+
+        <!-- BOOKING CARD -->
+        <div>
           <div class="booking-card">
-            <div class="bc-price" id="bc-price"></div>
+            <div class="bc-price" id="bc-price">₹9,500<span>/month</span></div>
+            <div style="font-size:12px;color:var(--muted);margin-bottom:16px">One month deposit · No broker fee</div>
+
             <div class="bc-breakdown" id="bc-breakdown-mini"></div>
+
             <div class="bc-actions">
-              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="openUPIPayment(currentPG.price, currentPG.name)">🎉 Book Now — Pay via UPI</button>
+              <button class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:14px" onclick="openUPIPayment(currentPG.price, currentPG.name)">🎉 Book Now — Pay via UPI</button>
+              <button class="btn btn-outline" style="width:100%;justify-content:center" onclick="showToast('Visit scheduled! Check your WhatsApp.')">📅 Schedule Visit</button>
             </div>
-            <div class="upi-card">
-              <div class="upi-card-title">💳 Payment via UPI</div>
-              <div class="upi-id-box">
+            <div class="bc-contact">
+              <button class="contact-btn call" onclick="showToast('Calling owner...')">📞 Call</button>
+              <button class="contact-btn wa" onclick="showToast('Opening WhatsApp...')">💬 WhatsApp</button>
+            </div>
+            <div class="bc-note">🔒 Secure booking · No advance needed to schedule a visit</div>
+          </div>
+
+          <div class="upi-card">
+            <div class="upi-card-title">💳 Payment via UPI</div>
+            <div class="upi-id-box">
+              <div style="font-size:24px">📱</div>
+              <div style="flex:1">
                 <div class="upi-id-text">7661912814@ptsbi</div>
-                <button class="upi-copy-btn" onclick="navigator.clipboard.writeText('7661912814@ptsbi').then(()=>showToast('✅ UPI ID copied!'))">📋 Copy</button>
+                <div class="upi-apps">PhonePe · Google Pay · Paytm · Any UPI app</div>
               </div>
-              <div class="upi-steps">
-                <div class="upi-step"><div class="upi-step-num">1</div><span>Pay exactly ₹<span id="test-price-label"></span></span></div>
-                <div class="upi-step"><div class="upi-step-num">2</div><span>Send screenshot to WhatsApp</span></div>
-              </div>
+              <button class="upi-copy-btn" onclick="navigator.clipboard.writeText('7661912814@ptsbi').then(()=>showToast('✅ UPI ID copied! Now open your UPI app.'))">📋 Copy</button>
             </div>
+            <div class="upi-steps">
+              <div class="upi-step"><div class="upi-step-num">1</div><span>Copy UPI ID above and open PhonePe / GPay / Paytm</span></div>
+              <div class="upi-step"><div class="upi-step-num">2</div><span>Pay the booking amount to <b>7661912814@ptsbi</b></span></div>
+              <div class="upi-step"><div class="upi-step-num">3</div><span>Screenshot the payment and WhatsApp to <b>+91 76619 12814</b></span></div>
+              <div class="upi-step"><div class="upi-step-num">4</div><span>We'll confirm your booking within 2 hours ✅</span></div>
+            </div>
+            <div class="upi-note">⚠️ Payment screenshot bhejne ke baad hi booking confirm hogi. WhatsApp: +91 76619 12814</div>
+          </div>
+
+          <div style="background:var(--green-light);border:1px solid #a7f3d0;border-radius:14px;padding:16px;margin-top:16px">
+            <div style="font-size:13px;font-weight:600;color:var(--green-dark);margin-bottom:6px">✅ Nivara Guarantee</div>
+            <div style="font-size:12px;color:var(--green-dark);line-height:1.6;opacity:.8">This PG is verified by our team. If it doesn't match the listing, we'll find you a replacement within 48 hours.</div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
 
+<!-- ════════════════════════════════════════
+     ABOUT PAGE
+════════════════════════════════════════ -->
 <div class="page" id="page-about">
   <div class="about-hero">
     <div class="container">
+      <div class="badge" style="margin-bottom:16px">🏢 Our story</div>
       <h1>We're fixing India's broken<br>PG ecosystem</h1>
+      <p>Millions of students and professionals move to new cities every year. They deserve better than fake listings, shady brokers, and surprise charges.</p>
     </div>
   </div>
-  <section class="section container">
-    <div class="team-grid">
-      <div class="team-card">
-        <div class="team-avatar" style="background:#1a6bff">YM</div>
-        <div class="team-name">Yashwanth</div>
-        <div class="team-role">Founder & CEO</div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="eyebrow">The problem we solve</div>
+        <h2>PG hunting is broken. We fixed it.</h2>
       </div>
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <div class="value-icon">🚫</div>
+          <h3>No fake listings</h3>
+          <p>Every PG on Nivara is visited by our ops team before going live. No more catfishing with stock photos.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">💸</div>
+          <h3>Zero broker fees</h3>
+          <p>We charge nothing to residents. Zero. Nada. You pay only rent and deposit — nothing else, ever.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">📋</div>
+          <h3>Transparent pricing</h3>
+          <p>Full price breakdown upfront. Rent, food, electricity, maintenance — no surprises on move-in day.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">🛡️</div>
+          <h3>Quality guarantee</h3>
+          <p>If a PG doesn't meet our standards, we remove it immediately. Our ratings reflect real resident experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg);border-top:1px solid var(--border)">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="eyebrow">By the numbers</div>
+        <h2>Our impact so far</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px">
+        <div style="text-align:center;padding:32px;background:#fff;border-radius:var(--r);border:1px solid var(--border)" class="fade-in">
+          <div style="font-family:'Clash Display',sans-serif;font-size:44px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">500+</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:6px">Verified PG properties</div>
+        </div>
+        <div style="text-align:center;padding:32px;background:#fff;border-radius:var(--r);border:1px solid var(--border)" class="fade-in">
+          <div style="font-family:'Clash Display',sans-serif;font-size:44px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">12K+</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:6px">Happy residents</div>
+        </div>
+        <div style="text-align:center;padding:32px;background:#fff;border-radius:var(--r);border:1px solid var(--border)" class="fade-in">
+          <div style="font-family:'Clash Display',sans-serif;font-size:44px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">3</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:6px">Major cities</div>
+        </div>
+        <div style="text-align:center;padding:32px;background:#fff;border-radius:var(--r);border:1px solid var(--border)" class="fade-in">
+          <div style="font-family:'Clash Display',sans-serif;font-size:44px;font-weight:700;background:linear-gradient(135deg,var(--blue),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">4.8★</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:6px">Average resident rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="eyebrow">The team</div>
+        <h2>People behind Nivara</h2>
+        <p>We're a team of ex-renters who know exactly how broken the PG experience is.</p>
+      </div>
+      <div class="team-grid">
+
+  <div class="team-card fade-in">
+    <div class="team-avatar" style="background:linear-gradient(135deg,var(--blue),#0f3fa8)">YM</div>
+    <div class="team-name">Yashwanth</div>
+    <div class="team-role">Founder &amp; CEO</div>
+    <div style="font-size:11px;color:var(--blue);font-weight:600;margin-top:4px">🎓 NIT Warangal</div>
+    <div style="display:flex;justify-content:center;gap:8px;margin-top:10px">
+      <a href="mailto:yashmodala@gmail.com" style="font-size:11px;color:var(--blue);background:var(--blue-light);padding:3px 10px;border-radius:20px">✉ Email</a>
+      <a href="https://wa.me/917661912814" target="_blank" style="font-size:11px;color:var(--green-dark);background:var(--green-light);padding:3px 10px;border-radius:20px">💬 WA</a>
+    </div>
+  </div>
+
+  <div class="team-card fade-in">
+    <div class="team-avatar" style="background:linear-gradient(135deg,var(--green),#0d7a4c)">KK</div>
+    <div class="team-name">Karthikeya</div>
+    <div class="team-role">Co-founder</div>
+    <div style="font-size:11px;color:var(--blue);margin-top:4px">🎓 IIT Kharagpur</div>
+  </div>
+
+  <div class="team-card fade-in">
+    <div class="team-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706)">AR</div>
+    <div class="team-name">Arjun Reddy</div>
+    <div class="team-role">Product Manager</div>
+    <div style="font-size:11px;color:var(--blue);margin-top:4px">🎓 BITS Pilani</div>
+  </div>
+
+  <div class="team-card fade-in">
+    <div class="team-avatar" style="background:linear-gradient(135deg,#ec4899,#be185d)">NJ</div>
+    <div class="team-name">Nanaji</div>
+    <div class="team-role">Marketing Head</div>
+    <div style="font-size:11px;color:var(--blue);margin-top:4px">🎓 NIT Warangal</div>
+  </div>
+
+</div>
     </div>
   </section>
 </div>
 
+<!-- ════════════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════════════ -->
 <div class="page" id="page-contact">
-  <div class="container contact-page">
-    <h2>Contact Us</h2>
-    <p>WhatsApp: +91 76619 12814</p>
+  <div class="contact-page">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="badge" style="margin-bottom:16px">📞 Get in touch</div>
+          <h2>We'd love to hear from you</h2>
+          <p>Whether you're looking for a room or want to list your property — we're here to help, always.</p>
+          <div class="contact-detail-item">
+            <div class="cdi-icon">📞</div>
+            <div><div class="cdi-label">Phone</div><div class="cdi-value">+91 76619 12814</div></div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cdi-icon">✉️</div>
+            <div><div class="cdi-label">Email</div><div class="cdi-value">yashmodala@gmail.com</div></div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cdi-icon">📍</div>
+            <div><div class="cdi-label">Headquarters</div><div class="cdi-value">Kondapur, Hyderabad — 500084</div></div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cdi-icon">🕐</div>
+            <div><div class="cdi-label">Support hours</div><div class="cdi-value">Mon–Sat, 9 AM – 8 PM IST</div></div>
+          </div>
+
+          <div style="background:var(--bg);border-radius:14px;padding:20px;margin-top:24px;border:1px solid var(--border)">
+            <div style="font-family:'Clash Display',sans-serif;font-size:16px;font-weight:600;margin-bottom:12px">🏢 For Property Owners</div>
+            <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px">List your PG for free and start getting quality tenants within 7 days. No brokerage, full support.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:6px">
+              <li style="font-size:13px;color:var(--ink2);display:flex;align-items:center;gap:8px">✅ Free professional photography</li>
+              <li style="font-size:13px;color:var(--ink2);display:flex;align-items:center;gap:8px">✅ Owner dashboard & rent tracking</li>
+              <li style="font-size:13px;color:var(--ink2);display:flex;align-items:center;gap:8px">✅ Rent payment protection</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <div class="contact-tabs">
+            <button class="ctab active" onclick="setContactTab('resident')" id="tab-resident">I'm looking for a PG</button>
+            <button class="ctab" onclick="setContactTab('owner')" id="tab-owner">I'm a PG owner</button>
+          </div>
+
+          <form onsubmit="handleContactSubmit(event)" id="contact-form">
+            <div class="form-row">
+              <div class="form-group"><label>Full name *</label><input type="text" placeholder="Your name" required></div>
+              <div class="form-group"><label>Phone *</label><input type="tel" placeholder="+91 76619 12814" required></div>
+            </div>
+            <div class="form-group"><label>Email</label><input type="email" placeholder="yashmodala@gmail.com"></div>
+            <div class="form-group" id="city-group"><label>Preferred city *</label>
+              <select required>
+                <option value="">Select city</option>
+                <option>Hyderabad</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+              </select>
+            </div>
+            <div class="form-group" id="budget-group"><label>Monthly budget</label>
+              <select>
+                <option value="">Any budget</option>
+                <option>Under ₹5,000</option>
+                <option>₹5,000 – ₹10,000</option>
+                <option>₹10,000 – ₹15,000</option>
+                <option>Above ₹15,000</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Message</label>
+              <textarea placeholder="Tell us more about what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:14px">
+              Send Message →
+            </button>
+            <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:12px">We respond within 2 hours during business hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
+<!-- ════════════════════════════════════════
+     FOOTER (shown on all pages)
+════════════════════════════════════════ -->
 <footer id="main-footer">
-  <div class="footer-inner"><p>© 2025 Nivara · Made in India 🇮🇳</p></div>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:#fff;margin-bottom:0">
+          <div class="logo-mark">N</div>
+          <span style="font-family:'Clash Display',sans-serif;font-size:20px">Nivara</span>
+        </div>
+        <p>Trusted PG discovery and booking platform across India. Verified listings, zero broker fees.</p>
+        <div class="footer-social" style="margin-top:16px">
+          <div class="social-icon">📘</div>
+          <div class="social-icon">📸</div>
+          <div class="social-icon">🐦</div>
+          <div class="social-icon">💼</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>For Residents</h5>
+        <a href="#" onclick="showPage('listings')">Find a PG</a>
+        <a href="#" onclick="showPage('listings')">Browse by city</a>
+        <a href="#">How it works</a>
+        <a href="#">Nivara app</a>
+        <a href="#">Refer a friend</a>
+      </div>
+      <div class="footer-col">
+        <h5>For Owners</h5>
+        <a href="#" onclick="showPage('contact')">List your PG</a>
+        <a href="#">Owner dashboard</a>
+        <a href="#">Rent protection</a>
+        <a href="#">Pricing for owners</a>
+        <a href="#">Partner portal</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#" onclick="showPage('about')">About Nivara</a>
+        <a href="#">Blog</a>
+        <a href="#" onclick="showPage('contact')">Contact us</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Nivara · Founded by <strong style="color:rgba(255,255,255,.9)">Yashwanth</strong> · NIT Warangal · Made in India 🇮🇳</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script>
+/* ═══════════════════════════════════════════
+   DATA
+═══════════════════════════════════════════ */
 const pgData = [
-  {id:1,name:'Yash PG',city:'Hyderabad',locality:'Kondapur',price:10,rating:4.8,reviews:24,type:'Single',emoji:'🏠',amenities:['AC','Meals','Gym','Laundry'],badge:'Verified',badgeType:'green',desc:'Yash PG is a premium accommodation. TEST PRICE SET TO ₹10.',gender:'Male'},
-  {id:2,name:'GreenNest PG',city:'Hyderabad',locality:'Madhapur',price:7200,rating:4.7,reviews:134,type:'Single',emoji:'🌿',amenities:['WiFi','AC','Meals'],badge:'Verified',badgeType:'blue',desc:'Peaceful PG in Madhapur.',gender:'Female'},
-  {id:3,name:'Urban Loft',city:'Bangalore',locality:'Koramangala',price:12000,rating:4.8,reviews:189,type:'Studio',emoji:'🏙️',amenities:['WiFi','AC','Gym'],badge:'Premium',badgeType:'blue',desc:'Boutique co-living.',gender:'Co-ed'}
+  {id:1,name:'Yash PG',city:'Hyderabad',locality:'Kondapur',price:10,rating:4.8,reviews:24,type:'Single',emoji:'🏠',amenities:['AC','Meals','Gym','Laundry','Parking','CCTV'],badge:'Verified',badgeType:'green',desc:'Yash PG is a premium paying guest accommodation in the heart of Kondapur, Hyderabad. Ideal for working professionals and students, we offer fully furnished AC rooms with home-cooked meals, gym access, secure parking, and 24/7 CCTV surveillance. Located minutes from HITEC City and major IT parks — comfort and convenience in one place.',gender:'Male'},
+  {id:2,name:'GreenNest PG',city:'Hyderabad',locality:'Madhapur',price:7200,rating:4.7,reviews:134,type:'Single',emoji:'🌿',amenities:['WiFi','AC','Meals','Laundry'],badge:'Verified',badgeType:'blue',desc:'Peaceful, garden-facing PG in Madhapur perfect for IT professionals. 2 minutes from the Outer Ring Road. Home-cooked meals twice a day, fast WiFi, and a friendly community.',gender:'Female'},
+  {id:3,name:'Urban Loft',city:'Bangalore',locality:'Koramangala',price:12000,rating:4.8,reviews:189,type:'Studio',emoji:'🏙️',amenities:['WiFi','AC','Gym','Laundry'],badge:'Premium',badgeType:'blue',desc:'Boutique co-living in the most happening locality in Bangalore. Close to tech parks, cafes, and metro. High-speed fiber internet and a fully equipped shared kitchen.',gender:'Co-ed'},
+  {id:4,name:'Serene Stays',city:'Bangalore',locality:'HSR Layout',price:8500,rating:4.6,reviews:92,type:'Double',emoji:'🌸',amenities:['WiFi','AC','Meals'],badge:'New',badgeType:'green',desc:'A cozy PG in HSR Layout with spacious rooms and a great community. Home-cooked South Indian meals, clean washrooms, and 24/7 security.',gender:'Female'},
+  {id:5,name:'Chennai Nest',city:'Chennai',locality:'Velachery',price:6000,rating:4.5,reviews:76,type:'Triple',emoji:'🌊',amenities:['WiFi','Meals','Laundry'],badge:'Budget Pick',badgeType:'green',desc:'Affordable and clean PG near Velachery IT park. Great value for freshers and students. North and South Indian meals, clean common areas, and friendly residents.',gender:'Male'},
+  {id:6,name:'Metro PG',city:'Chennai',locality:'Sholinganallur',price:7800,rating:4.7,reviews:103,type:'Single',emoji:'🚇',amenities:['WiFi','AC','Gym'],badge:'Verified',badgeType:'blue',desc:'Well-connected PG near Sholinganallur IT corridor, walking distance from the metro station. Modern amenities, 24/7 security, and high-speed internet.',gender:'Co-ed'},
+  {id:7,name:'Inspire Living',city:'Hyderabad',locality:'Gachibowli',price:11000,rating:4.8,reviews:156,type:'Studio',emoji:'💡',amenities:['WiFi','AC','Gym','Laundry','Meals'],badge:'Top Rated',badgeType:'green',desc:'All-in-one co-living space in Gachibowli, surrounded by tech parks. Fully furnished studio units with attached bathrooms, gym, and rooftop community area.',gender:'Co-ed'},
+  {id:8,name:'Home & Co',city:'Bangalore',locality:'Indiranagar',price:13500,rating:4.9,reviews:241,type:'Studio',emoji:'🏠',amenities:['WiFi','AC','Gym','Laundry'],badge:'Premium',badgeType:'blue',desc:'The finest co-living experience in Indiranagar, the trendiest neighborhood in Bangalore. Rooftop terrace, studio apartments, and a vibrant young professional community.',gender:'Co-ed'},
+  {id:9,name:'BudgetNest',city:'Chennai',locality:'Anna Nagar',price:4500,rating:4.4,reviews:58,type:'Triple',emoji:'🏡',amenities:['WiFi','Meals'],badge:'Budget Pick',badgeType:'green',desc:'Ideal for students and freshers on a tight budget. Clean, safe, and conveniently located in Anna Nagar with access to all major transit routes.',gender:'Male'},
+  {id:10,name:'Silicon PG',city:'Hyderabad',locality:'HITEC City',price:10500,rating:4.8,reviews:177,type:'Double',emoji:'💻',amenities:['WiFi','AC','Laundry','Gym'],badge:'Verified',badgeType:'blue',desc:'Premium PG steps away from HITEC City. Built for tech professionals with super-fast fiber internet, ergonomic workspaces, and a peaceful sleep environment.',gender:'Co-ed'},
+  {id:11,name:'Zen Homes',city:'Bangalore',locality:'Whitefield',price:9000,rating:4.6,reviews:88,type:'Single',emoji:'🧘',amenities:['WiFi','AC','Meals','Gym'],badge:'New',badgeType:'green',desc:'A mindful living space in Whitefield for professionals who value wellness. Yoga studio on premises, meditation garden, and healthy meals daily.',gender:'Female'},
+  {id:12,name:'The Hive',city:'Bangalore',locality:'Electronic City',price:7000,rating:4.7,reviews:112,type:'Double',emoji:'🐝',amenities:['WiFi','AC','Laundry'],badge:'Verified',badgeType:'blue',desc:'Community-first PG in Electronic City designed for young professionals. Community events, co-working zones, and a buzzing social atmosphere.',gender:'Co-ed'},
 ];
 
 const testimonials = [
-  {name:'Rohan Mehta',role:'Software Engineer',text:'Found my perfect room in Kondapur.',stars:5,initials:'RM',bg:'#e8f0ff'}
+  {name:'Rohan Mehta',role:'Software Engineer, Infosys · Hyderabad',text:'Moved from Delhi and found my perfect room in Kondapur within 3 days. No broker, no drama. The WiFi was actually 100 Mbps — first time in my PG life!',stars:5,initials:'RM',bg:'#e8f0ff'},
+  {name:'Ananya Singh',role:'UX Designer, Flipkart · Bangalore',text:"Nivara found me a single room in Koramangala matching my exact budget. The listing photos were 100% real — unlike every other platform I'd tried.",stars:5,initials:'AS',bg:'#e6f7f0'},
+  {name:'Karthik Rajan',role:'Data Analyst, Cognizant · Chennai',text:'The maintenance WhatsApp support is genuinely useful. AC broke at 11 PM, they had someone there by 9 AM the next morning. Never had that in 4 years of PG life.',stars:5,initials:'KR',bg:'#fef3c7'},
+  {name:'Preethi Nair',role:'Product Manager, TCS · Hyderabad',text:'I was scared of moving to Hyderabad alone. Nivara\'s verified listings and women-only filter made me feel safe. Found the perfect ladies PG in Madhapur.',stars:4,initials:'PN',bg:'#fce8f0'},
+  {name:'Arjun Verma',role:'Fresher, Wipro · Bangalore',text:'First job, first city. Nivara made the whole process stress-free. Transparent pricing — what they showed is what I paid. No hidden charges on move-in day.',stars:5,initials:'AV',bg:'#f0f0fe'},
+  {name:'Divya Krishnan',role:'MBA Student, IIM-B · Bangalore',text:'Listed my PG on Nivara and got 3 quality inquiries in 48 hours. Their team handled everything professionally. Definitely the best platform for owners.',stars:5,initials:'DK',bg:'#e8faf3'},
 ];
 
 let currentPG = pgData[0];
 let filteredData = [...pgData];
+let priceMax = 20000;
 
+/* ═══════════════════════════════════════════
+   PAGE ROUTING
+═══════════════════════════════════════════ */
 function showPage(page) {
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById('page-'+page).classList.add('active');
-  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.remove('active')});
   const navEl = document.getElementById('nav-'+page);
   if(navEl) navEl.classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
-  if(page==='home') renderFeatured();
+  initPage(page);
+}
+
+function initPage(page) {
+  if(page==='home') { renderFeatured(); renderTestimonials(); }
   if(page==='listings') renderListings();
 }
 
+/* ═══════════════════════════════════════════
+   RENDER CARDS
+═══════════════════════════════════════════ */
 function renderCard(pg) {
-  return `<div class="pg-card" onclick="openDetail(${pg.id})">
-    <div class="card-img"><span>${pg.emoji}</span></div>
+  const amen = pg.amenities.slice(0,4).map(a=>`<span class="tag">${a}</span>`).join('');
+  const badgeColor = pg.badgeType==='green'?'badge green':'badge';
+  return `
+  <div class="pg-card fade-in" onclick="openDetail(${pg.id})">
+    <div class="card-img" style="background:${getCardBg(pg.id)}">
+      <span style="position:relative;z-index:1">${pg.emoji}</span>
+      <div class="card-img-overlay"></div>
+      <div class="card-badge"><span class="${badgeColor}">${pg.badge}</span></div>
+      <button class="card-wishlist" onclick="event.stopPropagation();this.textContent=this.textContent==='🤍'?'❤️':'🤍'">🤍</button>
+    </div>
     <div class="card-body">
       <div class="card-name">${pg.name}</div>
-      <div class="card-price">₹${pg.price}</div>
+      <div class="card-loc">📍 ${pg.locality}, ${pg.city} &nbsp;·&nbsp; ${pg.gender}</div>
+      <div class="card-amenities">${amen}</div>
+      <div class="card-footer">
+        <div class="card-price">₹${pg.price.toLocaleString()}<span>/mo</span></div>
+        <div class="card-rating"><span class="star">★</span>${pg.rating} <span style="color:var(--muted);font-weight:400">(${pg.reviews})</span></div>
+      </div>
     </div>
   </div>`;
 }
 
+function getCardBg(id) {
+  const bgs=['#e8f0ff','#e6f7f0','#fef3c7','#fce8f0','#f0f0fe','#e8faf3'];
+  return bgs[id % bgs.length];
+}
+
 function renderFeatured() {
   const grid = document.getElementById('featured-grid');
-  if(grid) grid.innerHTML = pgData.slice(0,6).map(renderCard).join('');
+  if(!grid) return;
+  const top = pgData.sort((a,b)=>b.rating-a.rating).slice(0,6);
+  grid.innerHTML = top.map(renderCard).join('');
+  observeFade();
+}
+
+function renderTestimonials() {
+  const grid = document.getElementById('testimonials-grid');
+  if(!grid) return;
+  grid.innerHTML = testimonials.map(t=>`
+  <div class="testi-card fade-in">
+    <div class="testi-stars">${'★'.repeat(t.stars)}${'☆'.repeat(5-t.stars)}</div>
+    <div class="testi-quote">"${t.text}"</div>
+    <div class="testi-author">
+      <div class="testi-avatar" style="background:${t.bg};color:var(--ink2)">${t.initials}</div>
+      <div><div class="testi-name">${t.name}</div><div class="testi-role">${t.role}</div></div>
+    </div>
+  </div>`).join('');
+  observeFade();
 }
 
 function renderListings() {
   const grid = document.getElementById('listings-grid');
-  if(grid) {
-    grid.innerHTML = filteredData.map(renderCard).join('');
-    document.getElementById('result-count').innerHTML = `<b>${filteredData.length}</b> PGs found`;
+  if(!grid) return;
+  grid.innerHTML = filteredData.map(renderCard).join('');
+  document.getElementById('result-count').innerHTML = `<b>${filteredData.length}</b> PGs found`;
+  observeFade();
+}
+
+/* ═══════════════════════════════════════════
+   FILTERS & SORT
+═══════════════════════════════════════════ */
+function applyFilters() {
+  const cities = [...document.querySelectorAll('input[value="Hyderabad"],input[value="Bangalore"],input[value="Chennai"]')].filter(c=>c.checked).map(c=>c.value);
+  const types = [...document.querySelectorAll('input[value="Single"],input[value="Double"],input[value="Triple"],input[value="Studio"]')].filter(c=>c.checked).map(c=>c.value);
+  const amenFilters = [...document.querySelectorAll('input[value="WiFi"],input[value="AC"],input[value="Meals"],input[value="Gym"],input[value="Laundry"]')].filter(c=>c.checked).map(c=>c.value);
+  const minRating = parseFloat(document.querySelector('input[name="rating"]:checked').value) || 0;
+
+  filteredData = pgData.filter(pg => {
+    if(cities.length && !cities.includes(pg.city)) return false;
+    if(types.length && !types.some(t=>pg.type.includes(t))) return false;
+    if(amenFilters.length && !amenFilters.every(a=>pg.amenities.includes(a))) return false;
+    if(pg.price > priceMax) return false;
+    if(pg.rating < minRating) return false;
+    return true;
+  });
+  renderListings();
+}
+
+function updatePriceFilter(val) {
+  priceMax = parseInt(val);
+  document.getElementById('price-max-label').textContent = '₹'+parseInt(val).toLocaleString();
+  applyFilters();
+}
+
+function resetFilters() {
+  document.querySelectorAll('.filter-card input[type="checkbox"]').forEach(c=>c.checked=true);
+  document.querySelector('input[name="rating"][value="0"]').checked=true;
+  priceMax=20000;
+  document.getElementById('price-slider').value=20000;
+  document.getElementById('price-max-label').textContent='₹20,000';
+  filteredData=[...pgData];
+  renderListings();
+}
+
+function sortListings(val) {
+  if(val==='price-asc') filteredData.sort((a,b)=>a.price-b.price);
+  else if(val==='price-desc') filteredData.sort((a,b)=>b.price-a.price);
+  else if(val==='rating') filteredData.sort((a,b)=>b.rating-a.rating);
+  else if(val==='newest') filteredData.sort((a,b)=>b.id-a.id);
+  else filteredData=[...pgData].filter(p=>filteredData.includes(p));
+  renderListings();
+}
+
+function filterCity(el,city) {
+  document.querySelectorAll('.city-pill').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  showPage('listings');
+  if(city!=='all') {
+    filteredData = pgData.filter(p=>p.city===city);
+    renderListings();
   }
 }
 
+/* ═══════════════════════════════════════════
+   DETAIL PAGE
+═══════════════════════════════════════════ */
 function openDetail(id) {
   const pg = pgData.find(p=>p.id===id);
+  if(!pg) return;
   currentPG = pg;
+
   document.getElementById('detail-name').textContent = pg.name;
-  document.getElementById('detail-location').textContent = '📍 ' + pg.locality + ', ' + pg.city;
+  document.getElementById('detail-rating').textContent = pg.rating;
+  document.getElementById('detail-reviews').textContent = pg.reviews+' reviews';
+  document.getElementById('detail-location').textContent = pg.locality+', '+pg.city;
   document.getElementById('detail-emoji').textContent = pg.emoji;
   document.getElementById('detail-desc').textContent = pg.desc;
-  document.getElementById('bc-price').innerHTML = '₹' + pg.price + '<span>/month</span>';
-  document.getElementById('test-price-label').textContent = pg.price;
-  
-  const amenitiesContainer = document.getElementById('detail-amenities');
-  amenitiesContainer.innerHTML = pg.amenities.map(a => `<div class="amenity-item">${a}</div>`).join('');
-  
+  document.getElementById('rating-big').textContent = pg.rating;
+  document.getElementById('review-count-label').textContent = pg.reviews+' reviews';
+  document.getElementById('bc-price').innerHTML = '₹'+pg.price.toLocaleString()+'<span>/month</span>';
+
+  // Badges
+  document.getElementById('detail-badges').innerHTML = `
+    <span class="${pg.badgeType==='green'?'badge green':'badge'}">${pg.badge}</span>
+    <span class="badge">${pg.gender}</span>
+    <span class="badge">${pg.type}</span>`;
+
+  // Amenities
+  const amenMap = {'WiFi':'📶 High-speed WiFi','AC':'❄️ Air conditioning','Meals':'🍽️ Meals included','Gym':'🏋️ Gym access','Laundry':'👕 Laundry service','Parking':'🚗 Parking','CCTV':'📷 24/7 CCTV','Security':'🛡️ Security guard','Power Backup':'🔋 Power backup','Water Purifier':'💧 RO water','Housekeeping':'🧹 Housekeeping'};
+  const allAmen = [...pg.amenities,'CCTV','Security','Power Backup','Water Purifier','Housekeeping'];
+  document.getElementById('detail-amenities').innerHTML = allAmen.map(a=>`<div class="amenity-item"><span class="a-icon">${(amenMap[a]||a).split(' ')[0]}</span>${(amenMap[a]||a).split(' ').slice(1).join(' ')}</div>`).join('');
+
+  // Price breakdown
+  const food = pg.amenities.includes('Meals') ? `<tr style="background:#fff"><td style="padding:10px 16px;font-size:13px;color:var(--ink2)">Meals (2x daily)</td><td style="padding:10px 16px;text-align:right;font-size:13px;font-weight:600">₹2,500</td><td style="padding:10px 16px;font-size:12px;color:var(--muted)">Included</td></tr>` : '';
+  document.getElementById('price-breakdown-table').innerHTML = `
+    <tr style="background:var(--bg)"><td style="padding:10px 16px;font-size:13px;color:var(--ink2)">Rent</td><td style="padding:10px 16px;text-align:right;font-size:13px;font-weight:600">₹${(pg.price - (pg.amenities.includes('Meals')?2500:0)).toLocaleString()}</td><td style="padding:10px 16px;font-size:12px;color:var(--muted)">Monthly</td></tr>
+    ${food}
+    <tr style="background:#fff"><td style="padding:10px 16px;font-size:13px;color:var(--ink2)">Electricity</td><td style="padding:10px 16px;text-align:right;font-size:13px;font-weight:600">₹500–800</td><td style="padding:10px 16px;font-size:12px;color:var(--muted)">Usage-based</td></tr>
+    <tr style="background:var(--bg)"><td style="padding:10px 16px;font-size:13px;color:var(--ink2)">Maintenance</td><td style="padding:10px 16px;text-align:right;font-size:13px;font-weight:600">₹0</td><td style="padding:10px 16px;font-size:12px;color:var(--muted)">Included</td></tr>
+    <tr style="background:#e8f0ff"><td style="padding:12px 16px;font-size:14px;font-weight:700;color:var(--blue)">Total (approx)</td><td style="padding:12px 16px;text-align:right;font-size:14px;font-weight:700;color:var(--blue)">₹${pg.price.toLocaleString()}+</td><td style="padding:12px 16px;font-size:12px;color:var(--blue)">Per month</td></tr>`;
+
+  // Mini breakdown
   document.getElementById('bc-breakdown-mini').innerHTML = `
-    <div class="bc-row"><span>Rent</span><span>₹${pg.price}</span></div>
-    <div class="bc-row total"><span>Due</span><span>₹${pg.price}</span></div>`;
+    <div class="bc-row"><span>Rent</span><span>₹${pg.price.toLocaleString()}</span></div>
+    <div class="bc-row"><span>Security deposit</span><span>₹${pg.price.toLocaleString()}</span></div>
+    <div class="bc-row"><span>Broker fee</span><span style="color:var(--green)">₹0 🎉</span></div>
+    <div class="bc-row total"><span>Due at move-in</span><span>₹${(pg.price*2).toLocaleString()}</span></div>`;
+
+  // Reviews
+  const names = [['Rohan M.','#e8f0ff'],['Ananya S.','#e6f7f0'],['Karthik R.','#fef3c7'],['Preethi N.','#fce8f0'],['Arjun V.','#f0f0fe']];
+  const revTexts = ['Amazing PG, everything as shown. Move-in was seamless.','Best PG I\'ve stayed in. Maintenance team is very responsive.','Food quality is great. Community is friendly and helpful.','Very clean and well-maintained. WiFi works perfectly!','Highly recommended for working professionals. Value for money.'];
+  document.getElementById('detail-reviews-list').innerHTML = names.map((n,i)=>`
+    <div class="review-item">
+      <div class="review-header">
+        <div class="reviewer">
+          <div class="rev-avatar" style="background:${n[1]};color:var(--ink2)">${n[0].slice(0,2)}</div>
+          <div><div class="rev-name">${n[0]}</div><div class="rev-date">${['Jan','Feb','Mar','Apr','May'][i]} 2025</div></div>
+        </div>
+        <div class="rev-stars">${'★'.repeat(Math.round(pg.rating))}${'☆'.repeat(5-Math.round(pg.rating))}</div>
+      </div>
+      <div class="rev-text">${revTexts[i]}</div>
+    </div>`).join('');
 
   showPage('detail');
 }
 
-function applyFilters() {
-  const cities = [...document.querySelectorAll('input[type="checkbox"]:checked')].map(c=>c.value);
-  filteredData = pgData.filter(pg => cities.length === 0 || cities.includes(pg.city));
-  renderListings();
+/* ═══════════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════════ */
+function setContactTab(tab) {
+  document.getElementById('tab-resident').classList.toggle('active', tab==='resident');
+  document.getElementById('tab-owner').classList.toggle('active', tab==='owner');
+  const cityGroup = document.getElementById('city-group');
+  const budgetGroup = document.getElementById('budget-group');
+  if(tab==='owner') {
+    cityGroup.querySelector('label').textContent = 'PG city *';
+    budgetGroup.querySelector('label').textContent = 'Monthly rent range';
+    budgetGroup.querySelector('select').innerHTML = '<option>₹3,000 – ₹5,000</option><option>₹5,000 – ₹10,000</option><option>₹10,000 – ₹15,000</option><option>Above ₹15,000</option>';
+  } else {
+    cityGroup.querySelector('label').textContent = 'Preferred city *';
+    budgetGroup.querySelector('label').textContent = 'Monthly budget';
+    budgetGroup.querySelector('select').innerHTML = '<option>Any budget</option><option>Under ₹5,000</option><option>₹5,000 – ₹10,000</option><option>₹10,000 – ₹15,000</option><option>Above ₹15,000</option>';
+  }
 }
 
-function openUPIPayment(amount, pgName) {
-  const upiId = '7661912814@ptsbi';
-  const ownerName = encodeURIComponent('Nivara PG Yashwanth');
-  const note = encodeURIComponent('Booking: ' + pgName);
-  const upiLink = `upi://pay?pa=${upiId}&pn=${ownerName}&am=${amount}&cu=INR&tn=${note}`;
-  window.location.href = upiLink;
-  setTimeout(() => { showToast('Redirecting to UPI app...'); }, 500);
+function handleContactSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  setTimeout(()=>{
+    btn.textContent = '✅ Sent! We\'ll respond within 2 hours.';
+    btn.style.background = 'var(--green)';
+    showToast('Message sent! We\'ll respond shortly.');
+    e.target.reset();
+    setTimeout(()=>{btn.textContent='Send Message →';btn.style.background='';btn.disabled=false;},4000);
+  },1200);
+}
+
+/* ═══════════════════════════════════════════
+   UI UTILS
+═══════════════════════════════════════════ */
+function toggleMobileMenu() {
+  document.getElementById('mobileNav').classList.toggle('open');
 }
 
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
+  t.textContent = msg || '✅ Done!';
   t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),3000);
+  setTimeout(()=>t.classList.remove('show'),3500);
 }
 
-function toggleMobileMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
+// Scroll observer for fade-in
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(el=>{if(el.isIntersecting) el.target.classList.add('visible')});
+},{threshold:0.08});
+
+function observeFade() {
+  document.querySelectorAll('.fade-in:not(.visible)').forEach(el=>observer.observe(el));
+}
+
+// Navbar scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20);
+});
+
+
+/* ═══════════════════════════════════════════
+   UPI PAYMENT FUNCTION
+═══════════════════════════════════════════ */
+function openUPIPayment(amount, pgName) {
+  const upiId = '7661912814@ptsbi';
+  const pgNameEncoded = encodeURIComponent('Booking: ' + pgName + ' - Nivara PG');
+  const ownerName = encodeURIComponent('Nivara PG Yashwanth');
+  
+  // Build UPI deep link
+  const upiLink = `upi://pay?pa=${upiId}&pn=${ownerName}&am=${amount}&cu=INR&tn=${pgNameEncoded}`;
+  
+  // On mobile: try to open UPI app directly
+  window.location.href = upiLink;
+  
+  // Fallback toast after 2s (for desktop or if no UPI app)
+  setTimeout(() => {
+    showToast('📱 Open PhonePe/GPay → Pay to: 7661912814@ptsbi');
+  }, 2000);
+}
 
 // Init
 renderFeatured();
+renderTestimonials();
+observeFade();
 </script>
 </body>
 </html>
